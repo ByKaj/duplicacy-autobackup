@@ -1,7 +1,7 @@
 # Duplicacy Autobackup
 
-![build status](https://github.com/christophetd/duplicacy-autobackup/actions/workflows/.github/workflows/test-integration.yml/badge.svg)
-![latest version](https://img.shields.io/github/v/release/christophetd/duplicacy-autobackup)
+![build status](https://github.com/bykaj/duplicacy-autobackup/actions/workflows/.github/workflows/test-integration.yml/badge.svg)
+![latest version](https://img.shields.io/github/v/release/bykaj/duplicacy-autobackup)
 
 Duplicacy Autobackup is a Docker image to easily perform automated backups. It uses [duplicacy](https://github.com/gilbertchen/duplicacy) under the hood, and therefore supports:
 
