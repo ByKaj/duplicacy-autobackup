@@ -33,9 +33,11 @@ do_backup() {
     echo "Pre-backup script exited with status code $status. Not performing backup." >&2
     return
   fi
-
+  
+  /app/make-symlinks.sh
   duplicacy backup $DUPLICACY_BACKUP_OPTIONS
-
+  /app/dispose-symlinks.sh
+  
   if [[ -f $POST_BACKUP_SCRIPT ]]; then
     echo "Running post-backup script"
     sh $POST_BACKUP_SCRIPT
