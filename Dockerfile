@@ -1,10 +1,10 @@
 FROM alpine:3.15.0
-MAINTAINER Christophe Tafani-Dereeper <christophe@tafani-dereeper.me>
+MAINTAINER Kaj Visser <duplicacy-autobackup.github@kaj.email>
 
 #--
 #-- Build variables
 #--
-ARG DUPLICACY_VERSION=2.7.2
+ARG DUPLICACY_VERSION=3.1.0
 
 #--
 #-- Environment variables
