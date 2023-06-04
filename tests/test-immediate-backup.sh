@@ -11,7 +11,7 @@ PASSPHRASE='correct horse battery staple'
 BACKUP_NAME='test-backups'
 temp_dir=$(mktemp -d)
 
-if [[ ! -z $(aws b2 ls $TEST_BUCKET) ]]; then
+if [[ ! -z $(aws s3 ls $TEST_BUCKET) ]]; then
     echo "Test bucket is not empty. Exiting" >&2
     exit 1
 fi
